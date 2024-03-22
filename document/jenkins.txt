@@ -1,0 +1,20 @@
+java -jar jenkins.war -httpPort=8080
+
+http://localhost:8080/
+
+C:\Users\bumba\Documents\jenkins
+
+1) Hardcoded
+In jenkins under Build give the below command
+test verify -Dcucumber.filter.tags="@addplace or @deleteplace"
+
+under Custom workspace give C:\Users\bumba\eclipse-workspace\APIFramework (  Project path whatever you have )
+
+2) Parameter 
+
+First select  "This project is parameterized" -- Give any Name ( like tag ) and in choice given the tags we created in the project (like addplace
+deleteplace)
+Under Build :
+
+test verify -Dcucumber.filter.tags="@"$tag""
+
