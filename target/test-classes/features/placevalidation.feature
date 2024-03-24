@@ -9,8 +9,9 @@ Feature: Validate Place API's
     And "scope" in response is "APP"
     And verify "place_id" created maps to "<name>" using "GetPlaceAPI" 
     
+    #comment here for developer
       Examples: 
-      | name    | language    | address    |
+      | name    | language    | address   |
       | AAhouse |    Bengali  | GG Kol   |
 #      | ABhouse |    English  | Vir     |
     
